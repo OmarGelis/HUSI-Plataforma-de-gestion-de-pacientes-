@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Registrar Paciente</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='font-awesome/css/font-awesome.css')}}">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/ionicons.min.css')}}">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/AdminLTE.min.css')}}">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/blue.css')}}">
+ 
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition register-page">
+<div class="register-box">
+  <div class="register-logo">
+    <a href="../../index2.html"><b>Registrar paciente</b></a>
+  </div>
+
+  <div class="register-box-body">
+   
+
+    <form action="#" method="post">
+        <div class="form-group has-feedback">
+      
+                  <label>Tipo de Documento</label>
+                  <select class="form-control">
+                    <option>Cedula de ciudadania</option>
+                    <option>Tarjeta de identidad</option>
+                    <option>Registro Civil</option>
+                    <option>Otro</option>
+                  
+                  </select>
+    
+      </div>
+
+
+        <div class="form-group has-feedback">
+        <input name="numId" type="number" class="form-control" placeholder="Numero de identificacion" required>
+      
+      </div>
+
+
+  
+       <div class="form-group has-feedback">
+        <input name="fullName" type="text" class="form-control" placeholder="Nombres y Apellidos" required="">
+       
+       </div>
+       
+                  <div class="form-group has-feedback">
+      
+            <select class="form-control">
+             <option selected="Genero">Genero</option>
+                    <option>Hombre</option>
+                    <option>Mujer</option>
+                    <option>Otro</option>
+                  </select>
+                </div>
+
+          <div class="form-group has-feedback">
+        <input name="ciudad" type="text" class="form-control" placeholder="Ciudad" required="">
+      </div>        
+    
+     
+      <div class="form-group has-feedback">
+        <input name="email" type="email" class="form-control" placeholder="Email" required="">
+      </div>
+      <div class="form-group has-feedback">
+        <input name="password" type="password" class="form-control" placeholder="Contraseña" required="">
+       
+      </div>
+      <div class="form-group has-feedback">
+        <input name="vPassword" type="password" class="form-control" placeholder="Verificar Contraseña" required="">
+      
+      </div>
+      <div class="row">
+        <div class="col-xs-8">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" required="Aceptar terminos y condiciones"> I agree to the <a href="#">terms</a>
+            </label>
+          </div>
+        </div>
+        <!-- /.col -->
+        <div class="col-xs-4">
+          <a href="#" class="btn btn-primary btn-block btn-flat">Registrar</a>
+          
+        </div>
+        <!-- /.col -->
+      </div>
+    </form>
+
+  
+
+ 
+  </div>
+  <!-- /.form-box -->
+</div>
+<!-- /.register-box -->
+
+<!-- jQuery 3 -->
+<script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+
+<script>
+
+</script>
+</body>
+</html>
