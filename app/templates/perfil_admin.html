@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Dashboard paciente</title>
+  <title>Dashboard Admin</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -37,7 +37,7 @@
     <nav class="navbar navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="#" class="navbar-brand"><b>Dashboard</b> Pacientes</a>
+          <a href="#" class="navbar-brand"><b>Dashboard</b> Admin</a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <i class="fa fa-bars"></i>
           </button>
@@ -46,8 +46,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#">Agendar Citas </a></li>
-            <li><a href="#">Historia Clinica</a></li>
+            <li><a href="#">Usuarios</a></li>
+            <li><a href="#">Citas</a></li>
           
           </ul>
        
@@ -62,7 +62,7 @@
             <li class="dropdown user user-menu">
               <!-- Menu Toggle Button -->
              <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">pacienteNombre<span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">AdminNombre<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#">Perfil</a></li>
                 <li><a href="#">Configuracion</a></li>
@@ -92,6 +92,8 @@
         </h1>
         <ol class="breadcrumb text-left">
           <li class="active "><a href="#"><i class="fa fa-home"></i> Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Perfil</li>
+
          
         </ol>
       </section>
@@ -99,14 +101,68 @@
       <!-- Main content -->
       <section class="content">
         <div class="callout callout-info">
-          <h4 class="text-center">Hola nombrePaciente, Bienvenido!</h4>
-
+          <h4 class="text-center">Hola nombreAdmin, Bienvenido!</h4>
          
         </div>
   
         <!-- /.box -->
-      </section>
-      <!-- /.content -->
+        
+        <div class="register-box-body">
+          
+          
+          <form action="#" method="post">
+            <div class="form-group has-feedback">
+              
+              <label>Tipo de Documento</label>
+              <select class="form-control">
+                <option>Cedula de ciudadania</option>
+                <option>Tarjeta de identidad</option>
+                        <option>Registro Civil</option>
+                        <option>Otro</option>
+                        
+                      </select>
+                      
+                    </div>
+                    
+                    
+                    <div class="form-group has-feedback">
+                      <input name="numId" type="number" class="form-control" placeholder="Numero de identificacion" required>
+                      
+                    </div>
+                    
+                    
+                    
+                    <div class="form-group has-feedback">
+                      <input name="fullName" type="text" class="form-control" placeholder="Nombres y Apellidos" required="">
+                      
+                    </div>
+                    
+                    <div class="form-group has-feedback">
+                      
+                      <select class="form-control">
+                        <option selected="Genero">Genero</option>
+                        <option>Hombre</option>
+                        <option>Mujer</option>
+                        <option>Otro</option>
+                      </select>
+                    </div>
+    
+                    <div class="form-group has-feedback">
+                      <input name="ciudad" type="text" class="form-control" placeholder="Ciudad" required="">
+                    </div>        
+                    
+         
+                    <div class="form-group has-feedback">
+                      <input name="email" type="email" class="form-control" placeholder="Email" required="">
+                    </div>
+                  </form>
+                  
+                  
+                  
+                  
+                </div>
+              </section>
+                <!-- /.content -->
     </div>
     <!-- /.container -->
   </div>

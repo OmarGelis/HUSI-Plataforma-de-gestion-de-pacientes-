@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Dashboard paciente</title>
+  <title>Historia clinica</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -92,17 +92,28 @@
         </h1>
         <ol class="breadcrumb text-left">
           <li class="active "><a href="#"><i class="fa fa-home"></i> Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Historia Clinica</li>
          
         </ol>
       </section>
 
       <!-- Main content -->
-      <section class="content">
-        <div class="callout callout-info">
-          <h4 class="text-center">Hola nombrePaciente, Bienvenido!</h4>
 
-         
-        </div>
+        <table class="table table-condensed">
+            <tr>
+              <td class="warning col-md-3  ">Cita</td>
+              <td class="warning col-md-3">Fecha</td>
+              <td class="warning col-md-3">Comentarios</td>
+              <td class="warning col-md-3">Examenes</td>
+            </tr>
+
+            <tr>
+              <td>Medicina General</td>
+              <td>24 de Septiembre de 2021</td>
+              <td>Comentarios sobre el paciente en medicina general</td>
+              <td>nutricionista</td>
+            </tr>
+        </table>
   
         <!-- /.box -->
       </section>
