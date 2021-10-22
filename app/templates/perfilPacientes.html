@@ -1,0 +1,47 @@
+{% extends 'layoutPacientes.html'%}
+
+{% block content %} 
+<div class="content-wrapper">
+  <div class="container">
+    <!-- Content Header (Page header) -->
+    <section class="content-header text-left">
+      <h1>
+        Breadcrumb 
+        
+      </h1>
+      <ol class="breadcrumb text-left">
+        <li class="active "><a href="{{ url_for('dashboardPacientes') }}"><i class="fa fa-home"></i> Home</a>/<a href="{{ url_for('perfilPaciente') }}">Perfil</a></li>
+       
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Title</h3>
+    
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
+                        title="Collapse">
+                  <i class="fa fa-minus"></i></button>
+             
+              </div>
+            </div>
+            <div class="box-body">
+             Perfil
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer">
+
+       
+      </div>
+
+      <!-- /.box -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.container -->
+</div>
+
+{% endblock%}
