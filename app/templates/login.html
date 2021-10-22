@@ -36,13 +36,13 @@
   <div class="login-box-body">
 
 
-    <form action="../../index2.html" method="post">
+    <form name='flogin'  method='POST'>
       <div class="form-group has-feedback">
-        <input type="email" class="form-control" placeholder="Email" required>
+        <input id='usrtxt' name='usrtxt' type="email" class="form-control" placeholder="Email" required>
         <span class="fa  fa-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Contraseña" required>
+        <input id='pwdtxt' name='pwdtxt' type="password" class="form-control" placeholder="Contraseña" required>
         <span class="fa  fa-lock form-control-feedback"></span>
       </div>
       <div class="row">
@@ -61,11 +61,11 @@
         </div>
         <!-- /.col -->
       </div>
+      
+      
+      <!-- /.social-auth-links -->
+      <button type="submit" onclick='submit();' class="btn btn-info btn-block btn-flat">Ingresar</button>
     </form>
-
-
-    <!-- /.social-auth-links -->
- <button type="submit" class="btn btn-info btn-block btn-flat">Ingresar</button>
   <a href="{{ url_for('registrar') }}" class="btn btn-info btn-block btn-flat">Registrar Paciente</a>
   
   
